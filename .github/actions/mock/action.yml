@@ -1,0 +1,12 @@
+name: "Mock Action"
+description: "Simple Action to mock a step"
+
+inputs:
+  MOCK_STEP_NAME:
+    description: "Step Name"
+    required: true
+    default: "Step 1"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
